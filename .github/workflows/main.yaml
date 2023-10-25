@@ -1,3 +1,11 @@
+name: upload to s3 
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
 jobs:
   deploy:
     name: Upload to Amazon S3
